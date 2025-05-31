@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframe Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+    header, footer {
+      background: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      gap: 20px;
+    }
+    .main, .sidebar {
+      background: #eee;
+      padding: 20px;
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      nav::before {
+        content: '☰ Menu';
+        display: block;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trang Đích – Tên Cá Nhân</h1>
+    <p>Giới thiệu ngắn + Ảnh đại diện + CTA</p>
+  </header>
+
+  <nav>
+    <a href="#">Giới thiệu</a> |
+    <a href="#">Dự án</a> |
+    <a href="#">Liên hệ</a>
+  </nav>
+
+  <div class="container">
+    <div class="main">
+      <h2>Nội dung chính</h2>
+      <p>Phần giới thiệu chi tiết, danh sách dự án...</p>
+    </div>
+    <div class="sidebar">
+      <h2>Thanh bên</h2>
+      <p>Thông tin bổ sung hoặc liên kết nhanh.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Bản quyền © 2025</p>
+  </footer>
+</body>
+</html>
